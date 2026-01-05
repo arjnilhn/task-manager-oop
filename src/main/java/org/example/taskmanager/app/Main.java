@@ -5,6 +5,8 @@ import org.example.taskmanager.model.Priority;
 import org.example.taskmanager.model.Task;
 import org.example.taskmanager.model.TimedTask;
 import org.example.taskmanager.model.Project;
+import org.example.taskmanager.model.User;
+import org.example.taskmanager.model.Notification;
 
 import java.time.LocalDate;
 
@@ -48,6 +50,16 @@ public class Main {
         System.out.println("\nUpcoming tasks in project:");
         for (Task t : project.getUpcomingTasks()) {
             System.out.println("- " + t.getTitle());
+            User user = new User("jeff");
+            user.addProject(project);
+
+            System.out.println("\nUser: " + user.getUsername());
+            System.out.println("Projects count: " + user.getProjects().size());
+            System.out.println("\nNotifications:");
+            System.out.println(Notification.generateMessage(task1));
+            System.out.println(Notification.generateMessage(task2));
+
+
         }
 
     }
