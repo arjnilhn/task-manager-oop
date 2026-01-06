@@ -1,18 +1,36 @@
 # Task & Project Management Tool
 
-This project is a Java-based console application developed for the Object-Oriented Programming course.
+A console-based Java application for creating tasks and organizing them under projects.  
+This project was developed for the Object-Oriented Programming course and demonstrates OOP principles, UML diagrams, GitHub workflow, and unit testing.
 
 ## Features
-- Create tasks
+- Create tasks with title, priority, and deadline
 - Assign tasks to projects
 - Mark tasks as completed
-- View upcoming tasks
+- View upcoming (not completed) tasks
+- Show simple deadline-based notifications
 
-## Technologies
-- Java 17
-- Maven
-- JUnit 5
+## OOP Concepts
+- **Encapsulation:** `Task` encapsulates `Deadline` and `Priority`
+- **Inheritance:** `TimedTask` extends `Task`
+- **Interface:** `Completable` is implemented by `Task`
 
-## Project Status
-Initial setup and design phase.
+## UML
+- Class diagram: `docs/uml/class-diagram.png`
+- Use case diagram: `docs/uml/usecase-diagram.png`
+- PlantUML use case source: `docs/use-case.puml`
+
+## How to Run
+Run the `Main` class:
+- `src/main/java/org/example/taskmanager/app/Main.java`
+
+A console menu will appear.
+
+## How to Test
+JUnit 5 tests are under `src/test/java`.
+
+Run with Maven:
+```bash
+mvn test
+
 
