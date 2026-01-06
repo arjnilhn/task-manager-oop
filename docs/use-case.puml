@@ -1,1 +1,13 @@
-// Use case diagram will be added here.
+@startuml
+left to right direction
+
+actor User
+
+User --> (Create Task)
+User --> (Assign Task to Project)
+User --> (Mark Task as Completed)
+User --> (View Upcoming Tasks)
+User --> (View Notifications)
+
+@enduml
+

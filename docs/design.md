@@ -1,17 +1,11 @@
-# Design Overview
+# System Design
 
-This project is developed using Object-Oriented Programming principles.
+## UML Class Diagram
+The following diagram shows the class structure of the Task & Project Management Tool, including inheritance, interfaces, and relationships between classes.
 
-## Planned Classes
-- Task: Represents a basic task
-- TimedTask: Extends Task with deadline functionality
-- Deadline: Encapsulates due date validation
-- Project: Groups tasks under a project
-- User: Owns projects
-- Notification: Represents reminders and alerts
+![Class Diagram](uml/class-diagram.png)
 
-## OOP Principles Used
-- Encapsulation: Deadlines and priorities are private and controlled
-- Inheritance: TimedTask extends Task
-- Interface: Completable interface for task completion
-- Polymorphism: Tasks are handled via the base Task type
+## UML Use Case Diagram
+The following diagram illustrates how the user interacts with the system through the console-based interface.
+
+![Use Case Diagram](uml/use-case-diagram.png)
